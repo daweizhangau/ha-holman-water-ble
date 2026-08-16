@@ -1,0 +1,17 @@
+{
+  "domain": "holman_water_ble",
+  "name": "Holman Water BLE (Unofficial)",
+  "codeowners": ["@daweizhangau"],
+  "config_flow": true,
+  "dependencies": ["bluetooth"],
+  "documentation": "https://github.com/daweizhangau/ha-holman-water-ble",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "requirements": ["bleak-retry-connector>=3.0.0"],
+  "version": "1.0.0",
+  "bluetooth": [
+    {
+      "service_uuid": "c521f000-0d70-4d4f-8e43-40d84c50ab38"
+    }
+  ]
+}

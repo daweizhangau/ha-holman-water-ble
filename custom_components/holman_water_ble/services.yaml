@@ -1,0 +1,11 @@
+# Service definitions for Holman Water BLE
+unpair:
+  name: Unpair
+  description: Clear the pairing passcode from a Holman Water device.
+  fields:
+    mac_address:
+      name: MAC Address
+      description: MAC address of the device to unpair.
+      required: true
+      selector:
+        text:

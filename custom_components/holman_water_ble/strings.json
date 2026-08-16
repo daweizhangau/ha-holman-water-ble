@@ -1,0 +1,116 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select Holman Water Device",
+        "description": "Select a discovered Holman Water BLE device to add.",
+        "data": {
+          "mac": "Device"
+        }
+      },
+      "manual": {
+        "title": "Manual Entry",
+        "description": "Enter the MAC address of your Holman Water BLE device.",
+        "data": {
+          "mac": "MAC Address",
+          "name": "Device Name"
+        }
+      },
+      "bluetooth": {
+        "title": "Holman Water Device Discovered",
+        "description": "A Holman Water BLE device was discovered nearby."
+      },
+      "confirm": {
+        "title": "Add Holman Water Device",
+        "description": "**{name}**\n\n**MAC:** {address}\n**Model:** {model} ({zones})\n**Power:** {power}"
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the device. Please check it is powered on and in range.",
+      "unknown": "Unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This device is already configured.",
+      "no_devices_found": "No Holman Water BLE devices found nearby."
+    }
+  },
+  "entity": {
+    "switch": {
+      "valve": {
+        "name": "Valve {zone}",
+        "state_attributes": {
+          "is_on": "Watering status"
+        }
+      }
+    },
+    "number": {
+      "duration": {
+        "name": "Valve {zone} Duration"
+      },
+      "poll_interval": {
+        "name": "Poll Interval"
+      }
+    },
+    "button": {
+      "read_diagnostics": {
+        "name": "Read Diagnostics"
+      },
+      "clear_pairing": {
+        "name": "Clear Pairing"
+      },
+      "pair": {
+        "name": "Pair"
+      }
+    },
+    "sensor": {
+      "battery_voltage": {
+        "name": "Battery Voltage"
+      },
+      "voltage_dc": {
+        "name": "Voltage DC"
+      },
+      "voltage_ac": {
+        "name": "Voltage AC"
+      },
+      "voltage_valve": {
+        "name": "Voltage Valve"
+      },
+      "dial_position": {
+        "name": "Dial Position"
+      },
+      "watering_status": {
+        "name": "Watering Status"
+      },
+      "rain_sensor": {
+        "name": "Rain Sensor"
+      },
+      "active_station": {
+        "name": "Active Station"
+      },
+      "connected_valves": {
+        "name": "Connected Valves"
+      },
+      "firmware_version": {
+        "name": "Firmware Version"
+      },
+      "protocol_version": {
+        "name": "Protocol Version"
+      },
+      "diagnostic_byte": {
+        "name": "Diagnostic Byte"
+      }
+    }
+  },
+  "services": {
+    "unpair": {
+      "name": "Unpair",
+      "description": "Clear the pairing passcode from a Holman Water device.",
+      "fields": {
+        "mac_address": {
+          "name": "MAC Address",
+          "description": "MAC address of the device to unpair."
+        }
+      }
+    }
+  }
+}

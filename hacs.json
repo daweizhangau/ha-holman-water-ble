@@ -1,0 +1,6 @@
+{
+  "name": "Holman Water BLE",
+  "type": "integration",
+  "render_readme": true,
+  "homeassistant": "2026.2.0"
+}

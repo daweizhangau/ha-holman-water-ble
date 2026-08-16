@@ -1,0 +1,16 @@
+# Test dependencies for the holman_water_ble HA integration.
+
+# Home Assistant core (matches the test environment)
+homeassistant>=2026.2.0
+# BLE stack
+bleak>=3.0.0
+# HA Bluetooth retry connector (runtime dependency of the component)
+bleak-retry-connector>=4.0.0
+# Async test support
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+# Mocking support
+pytest-mock>=3.12.0
+# Transitive HA dependencies (needed for importing HA components)
+pyserial>=3.5
+aiousbwatcher>=1.1.0
