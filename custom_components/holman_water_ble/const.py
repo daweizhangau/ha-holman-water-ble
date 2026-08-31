@@ -2,6 +2,7 @@
 
 DOMAIN = "holman_water_ble"
 MANUFACTURER = "Holman Industries"
+DEFAULT_DEVICE_NAME = "Holman Water Device"
 
 # Service UUID
 SERVICE_UUID = "C521F000-0D70-4D4F-8E43-40D84C50AB38"
